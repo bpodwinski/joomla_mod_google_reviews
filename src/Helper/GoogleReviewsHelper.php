@@ -154,7 +154,11 @@ class GoogleReviewsHelper
                 }
 
                 $data = json_decode($response->body, true);
-
+                /*                 echo '<pre>';
+                var_dump($data);
+                echo '</pre>';
+                die;
+ */
                 // Check if reviews exist
                 if (!empty($data['reviews'])) {
                     $result = [

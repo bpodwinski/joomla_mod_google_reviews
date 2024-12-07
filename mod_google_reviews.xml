@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="module" version="5.0" client="site" method="upgrade">
     <name>Google Reviews</name>
-    <version>1.0.0</version>
+    <version>1.0.4</version>
     <author>Benoit Podwinski</author>
     <creationDate>2024-12</creationDate>
 	<copyright>(C) 2005 Open Source Matters, Inc.</copyright>
@@ -43,6 +43,13 @@
                     label="MOD_GOOGLE_REVIEWS_CACHE_LIFETIME"
                     description="MOD_GOOGLE_REVIEWS_CACHE_LIFETIME_DESC"
                     required="true" 
+                />
+                <field 
+                    name="maxLength" 
+                    type="number" 
+                    default="250" 
+                    label="MOD_GOOGLE_REVIEWS_MAX_LENGTH_LABEL"
+                    description="MOD_GOOGLE_REVIEWS_MAX_LENGTH_DESC"
                 />
             </fieldset>
         </fields>
