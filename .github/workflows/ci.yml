@@ -20,7 +20,7 @@ jobs:
       # 2. Zip the module
       - name: Create ZIP file
         run: |
-          zip -r mod_google_reviews_v${GITHUB_REF##*/}.zip mod_google_reviews/ -x ".git/*" ".github/*" "README.md"
+          zip -r mod_google_reviews_v${GITHUB_REF##*/}.zip ./ -x ".git/*" ".github/*" "README.md"
 
       # 3. Create the release
       - name: Create GitHub Release
