@@ -3,7 +3,7 @@ name: Create Release
 on:
   push:
     tags:
-      - "*" # Trigger on tags starting with 'v'
+      - "v*"
 
 jobs:
   release:
