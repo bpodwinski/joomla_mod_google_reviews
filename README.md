@@ -76,5 +76,3 @@ If you encounter any issues or have questions about this module, please feel fre
 ## License
 
 This module is licensed under the **GNU General Public License v2 or later**.
-
----
