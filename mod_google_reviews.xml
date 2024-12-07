@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="5.0" client="site" method="upgrade">
+    <name>Google Reviews</name>
+    <version>1.0.0</version>
+    <author>Benoit Podwinski</author>
+    <creationDate>2024-12</creationDate>
+	<copyright>(C) 2005 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>me@benoitpodwinski.com</authorEmail>
+	<authorUrl>benoitpodwinski.com</authorUrl>
+    <description>MOD_GOOGLE_REVIEWS_DESCRIPTION</description>
+    <namespace path="src">Bp\Module\GoogleReviews</namespace>
+    <files>
+        <folder module="mod_google_reviews">services</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+        <folder>language</folder>
+    </files>
+    <service>
+        <servicefile>services/provider.php</servicefile>
+    </service>
+    <config>
+        <fields name="params">
+            <fieldset name="basic" label="MOD_GOOGLE_REVIEWS_FIELDSET_BASIC">
+                <field
+                    name="api_key"
+                    type="text"
+                    label="MOD_GOOGLE_REVIEWS_API_KEY_LABEL"
+                    description="MOD_GOOGLE_REVIEWS_API_KEY_DESC"
+                    required="true"
+                />
+                <field
+                    name="place_id"
+                    type="text"
+                    label="MOD_GOOGLE_REVIEWS_PLACE_ID_LABEL"
+                    description="MOD_GOOGLE_REVIEWS_PLACE_ID_DESC"
+                    required="true"
+                />
+                <field 
+                    name="cache_lifetime" 
+                    type="number" 
+                    default="30" 
+                    label="MOD_GOOGLE_REVIEWS_CACHE_LIFETIME"
+                    description="MOD_GOOGLE_REVIEWS_CACHE_LIFETIME_DESC"
+                    required="true" 
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
