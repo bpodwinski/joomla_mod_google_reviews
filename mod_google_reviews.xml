@@ -51,6 +51,24 @@
                     label="MOD_GOOGLE_REVIEWS_MAX_LENGTH_LABEL"
                     description="MOD_GOOGLE_REVIEWS_MAX_LENGTH_DESC"
                 />
+                <field
+                    name="displayMode"
+                    type="list"
+                    label="MOD_GOOGLE_REVIEWS_DISPLAY_MODE"
+                    description="MOD_GOOGLE_REVIEWS_DISPLAY_MODE_DESC"
+                    default="grid">
+                    <option value="grid">Grid</option>
+                    <option value="carousel">Carousel</option>
+                </field>
+                <field
+                    name="itemsPerSlide"
+                    type="number"
+                    default="3"
+                    label="MOD_GOOGLE_REVIEWS_ITEMS_PER_SLIDE"
+                    description="MOD_GOOGLE_REVIEWS_ITEMS_PER_SLIDE_DESC"
+                    min="1"
+                    max="5"
+                />
             </fieldset>
         </fields>
     </config>

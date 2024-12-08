@@ -163,7 +163,7 @@ class GoogleReviewsHelper
                 if (!empty($data['reviews'])) {
                     $result = [
                         'placeId' => $placeId,
-                        'reviews' => array_slice($data['reviews'], 0, 5)
+                        'reviews' => $data['reviews']
                     ];
 
                     // Store in cache
