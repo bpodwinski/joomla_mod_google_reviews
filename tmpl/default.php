@@ -101,6 +101,15 @@ if (isset($reviews['error'])): ?>
             <?php endif; ?>
         </div>
 
+        <?php if ($placeId): ?>
+            <div class="text-center mt-4">
+                <a href="https://www.google.com/maps/place/?q=place_id:<?php echo htmlspecialchars($placeId); ?>"
+                    target="_blank" rel="noopener" class="btn btn-primary">
+                    <?php echo Text::_('MOD_GOOGLE_REVIEWS_VIEW_ALL_REVIEWS'); ?>
+                </a>
+            </div>
+        <?php endif; ?>
+
     <?php elseif ($displayMode === 'carousel'): ?>
         <!-- Carousel View -->
         <div id="googleReviewsCarousel" class="google-reviews carousel slide mt-4 h-100" data-bs-ride="carousel" data-bs-touch="true">
@@ -179,6 +188,15 @@ if (isset($reviews['error'])): ?>
                 <?php endforeach; ?>
             </div>
         </div>
+
+        <?php if ($placeId): ?>
+            <div class="text-center mt-4">
+                <a href="https://www.google.com/maps/place/?q=place_id:<?php echo htmlspecialchars($placeId); ?>"
+                    target="_blank" rel="noopener" class="btn btn-primary">
+                    <?php echo Text::_('MOD_GOOGLE_REVIEWS_VIEW_ALL_REVIEWS'); ?>
+                </a>
+            </div>
+        <?php endif; ?>
 
         <script>
             document.addEventListener('DOMContentLoaded', function() {
