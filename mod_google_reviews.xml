@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="module" version="5.0" client="site" method="upgrade">
     <name>Google Reviews</name>
-    <version>1.0.4</version>
+    <version>1.0.6</version>
     <author>Benoit Podwinski</author>
     <creationDate>2024-12</creationDate>
 	<copyright>(C) 2005 Open Source Matters, Inc.</copyright>
