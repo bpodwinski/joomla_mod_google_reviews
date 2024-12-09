@@ -82,13 +82,22 @@ if (isset($reviews['error'])): ?>
                                     </p>
                                     <i class="fab fa-google"
                                         style="
-                                            font-size: 30px; 
-                                            position: absolute; 
-                                            top: 1rem; 
-                                            right: 1rem; 
-                                            opacity: 0.1;
-                                            color: #444444;
+                                            font-size: 30px;
+                                            position: absolute;
+                                            top: 1rem;
+                                            right: 1rem;
                                             pointer-events: none;
+                                            background: conic-gradient(
+                                                from -45deg,
+                                                #ea4335 110deg,
+                                                #4285f4 90deg 180deg,
+                                                #34a853 180deg 270deg,
+                                                #fbbc05 270deg
+                                            ) 73% 55%/150% 150% no-repeat;
+                                            -webkit-background-clip: text;
+                                            background-clip: text;
+                                            -webkit-text-fill-color: transparent;
+                                            color: transparent;
                                         ">
                                     </i>
                                 </div>
@@ -168,16 +177,24 @@ if (isset($reviews['error'])): ?>
                                                 ?>
                                             </p>
                                         </div>
-
                                         <i class="fab fa-google"
                                             style="
-                                            font-size: 26px; 
-                                            position: absolute; 
-                                            top: 1rem; 
-                                            right: 1rem; 
-                                            opacity: 0.1;
-                                            color: #444444;
+                                            font-size: 30px;
+                                            position: absolute;
+                                            top: 1rem;
+                                            right: 1rem;
                                             pointer-events: none;
+                                            background: conic-gradient(
+                                                from -45deg,
+                                                #ea4335 110deg,
+                                                #4285f4 90deg 180deg,
+                                                #34a853 180deg 270deg,
+                                                #fbbc05 270deg
+                                            ) 73% 55%/150% 150% no-repeat;
+                                            -webkit-background-clip: text;
+                                            background-clip: text;
+                                            -webkit-text-fill-color: transparent;
+                                            color: transparent;
                                         ">
                                         </i>
                                     </div>
