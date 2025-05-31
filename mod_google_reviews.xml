@@ -24,7 +24,7 @@
             <fieldset name="basic" label="MOD_GOOGLE_REVIEWS_FIELDSET_BASIC">
                 <field name="api_key" type="text" label="MOD_GOOGLE_REVIEWS_API_KEY_LABEL" description="MOD_GOOGLE_REVIEWS_API_KEY_DESC" required="true" />
                 <field name="place_id" type="text" label="MOD_GOOGLE_REVIEWS_PLACE_ID_LABEL" description="MOD_GOOGLE_REVIEWS_PLACE_ID_DESC" required="true" />
-                <field name="cache_lifetime" type="number" default="30" label="MOD_GOOGLE_REVIEWS_CACHE_LIFETIME" description="MOD_GOOGLE_REVIEWS_CACHE_LIFETIME_DESC" required="true" />
+                <field name="cache_lifetime" type="number" default="1440" label="MOD_GOOGLE_REVIEWS_CACHE_LIFETIME" description="MOD_GOOGLE_REVIEWS_CACHE_LIFETIME_DESC" required="true" />
                 <field name="maxLength" type="number" default="250" label="MOD_GOOGLE_REVIEWS_MAX_LENGTH_LABEL" description="MOD_GOOGLE_REVIEWS_MAX_LENGTH_DESC" />
                 <field name="displayMode" type="list" label="MOD_GOOGLE_REVIEWS_DISPLAY_MODE" description="MOD_GOOGLE_REVIEWS_DISPLAY_MODE_DESC" default="grid">
                     <option value="grid">Grid</option>
