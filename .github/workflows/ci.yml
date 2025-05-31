@@ -20,7 +20,7 @@ jobs:
       # 2. Zip the module
       - name: Create ZIP file
         run: |
-          zip -r mod_google_reviews_v${GITHUB_REF##*/}.zip ./ -x ".git/*" ".github/*" "README.md"
+          zip -r mod_google_reviews_v${{ github.ref_name }}.zip ./ -x ".git/*" ".github/*" "README.md"
 
       # 3. Create the release
       - name: Create GitHub Release
@@ -43,6 +43,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./mod_google_reviews_v${GITHUB_REF##*/}.zip
-          asset_name: mod_google_reviews_v${GITHUB_REF##*/}.zip
+          asset_path: ./mod_google_reviews_v${{ github.ref_name }}.zip
+          asset_name: mod_google_reviews_v${{ github.ref_name }}.zip
           asset_content_type: application/zip
